@@ -1,8 +1,10 @@
 {
     "name": "vendor/framework",
+    "version": "2.7.1",
     "autoload": {
         "psr-4": {
-            "Vendor\\Framework\\": "src/"
+            "Framework\\": "core/",
+            "App\\": "app/"
         }
     },
     "authors": [
@@ -11,6 +13,7 @@
         }
     ],
     "require-dev": {
-        "symfony/var-dumper": "^7.2"
+        "symfony/var-dumper": "^7.2",
+        "laravel/pint": "^1.18"
     }
 }

@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'vendor/framework',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => '2.7.1',
+        'version' => '2.7.1.0',
         'reference' => null,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
@@ -10,6 +10,15 @@
         'dev' => true,
     ),
     'versions' => array(
+        'laravel/pint' => array(
+            'pretty_version' => 'v1.18.3',
+            'version' => '1.18.3.0',
+            'reference' => 'cef51821608239040ab841ad6e1c6ae502ae3026',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../laravel/pint',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
         'symfony/polyfill-mbstring' => array(
             'pretty_version' => 'v1.31.0',
             'version' => '1.31.0.0',
@@ -29,8 +38,8 @@
             'dev_requirement' => true,
         ),
         'vendor/framework' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => '2.7.1',
+            'version' => '2.7.1.0',
             'reference' => null,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
