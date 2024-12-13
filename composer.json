@@ -1,0 +1,16 @@
+{
+    "name": "vendor/framework",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nodest"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^7.2"
+    }
+}
