@@ -8,16 +8,21 @@ class Route
 
     public static function get(string $uri, callable $callback): void
     {
-        static::$routes['GET'][$uri] = $callback;
+        static::$routes['GET'][self::addLeadingSlash($uri)] = $callback;
     }
 
     public static function post(string $uri, callable $callback): void
     {
-        static::$routes['POST'][$uri] = $callback;
+        static::$routes['POST'][self::addLeadingSlash($uri)] = $callback;
     }
 
     public static function routes(): array
     {
         return static::$routes;
+    }
+
+    private static function addLeadingSlash(string $uri): string
+    {
+        return '/'.trim($uri, '/');
     }
 }
