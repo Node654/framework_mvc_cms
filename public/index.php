@@ -8,6 +8,6 @@ require_once '../config/init.php';
 require_once ROOT.'/vendor/autoload.php';
 require_once CONFIG.'/routes.php';
 
-$app = new \Framework\Application();
+$app = new \Framework\Application;
 
 $app->run();
