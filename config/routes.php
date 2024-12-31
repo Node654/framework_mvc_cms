@@ -2,14 +2,8 @@
 
 use Framework\Route;
 
-Route::get('/', function () {
-    return 'Home page';
-});
+Route::get('/', [\App\Controllers\HomeController::class, 'index']);
 
-Route::get('/about', function () {
-    return 'About page';
-});
+Route::get('/about', [\App\Controllers\AboutController::class, 'index']);
 
-Route::get('/contact', function () {
-    return 'Contact page';
-});
+Route::get('/contact', [\App\Controllers\ContactController::class, 'index']);

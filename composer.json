@@ -5,7 +5,10 @@
         "psr-4": {
             "Framework\\": "core/",
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
     },
     "authors": [
         {

@@ -9,6 +9,7 @@ class ComposerStaticInita83e9c67807d415f3c054444daea7295
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        'f1ad080294776eeb8d2a02e279740391' => __DIR__ . '/../..' . '/helpers/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -61,7 +62,14 @@ class ComposerStaticInita83e9c67807d415f3c054444daea7295
     );
 
     public static $classMap = array (
+        'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Framework\\Application' => __DIR__ . '/../..' . '/core/Application.php',
+        'Framework\\Request' => __DIR__ . '/../..' . '/core/Request.php',
+        'Framework\\Response' => __DIR__ . '/../..' . '/core/Response.php',
+        'Framework\\Route' => __DIR__ . '/../..' . '/core/Route.php',
+        'Framework\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'Framework\\View' => __DIR__ . '/../..' . '/core/View.php',
         'Symfony\\Component\\VarDumper\\Caster\\AmqpCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/AmqpCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\ArgsStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ArgsStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\Caster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/Caster.php',
